@@ -1,0 +1,49 @@
+.teacher{
+	background-image: url(images/build1.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-color: #000a;
+	background-blend-mode: overlay;
+	min-height: 100vh; 
+}
+.teacherImg{
+	border:4px groove #ddd;
+}
+.teacherImg img{
+	height: 250px;
+}
+.teacher .name{
+	color:#fff;	
+	padding-top:40px;
+	padding-bottom:25px;
+	border-bottom: 2px dotted #fff;
+}
+.icons{
+	background: #171717;
+	color: #fff;
+	padding:20px;
+}
+.icons i {
+	font-size: 2rem;
+	cursor: pointer;
+	margin-top: 10px;
+	text-align: center;
+	padding: 5px;
+	margin-right:10px;
+}
+.data span{
+	color:#ddd;
+	font-size: 1rem;
+}
+.data h4,.data i{
+	color:#e76700;
+	margin-top: 20px;
+}
+.data i{
+	font-size: 1.8rem;
+	width: 60px;
+	height: 60px;
+	padding:16px;
+	border-radius: 15px 0px 15px 0px;
+	border:1px solid #e76700;
+}

@@ -1,0 +1,36 @@
+    .Slider{
+        height: 70vh;
+        background: url(images/slider-background.jpg);
+        background-size: 100% 100%;
+        background-position:center;
+        background-attachment: fixed;
+        transition: 5s linear background-size;
+    }
+
+  .slider-inner{
+        height: 100% !important;
+        background: linear-gradient(110.79050755798562deg, 
+            rgba(136, 156, 118,0.5) 5.911420204978038%,
+            rgba(65, 123, 108,0.5) 53.18448023426062%,rgba(43, 45, 78,0.5) 95.95534407027817%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   .slider-text{
+        position: absolute;
+        top:0px;
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .address ul li i{
+        background: #132743;
+        color:white;
+        border-radius: 50%;
+        padding:10px;
+        width: 35px;
+        height: 35px;
+    }
+ 

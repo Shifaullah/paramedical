@@ -1,0 +1,19 @@
+iframe	{
+	border:none;
+	background: #ddd;
+	position: relative;
+}
+.card{
+	color:black !important;
+	background: #d6e0f0;
+	border:none !important;
+}
+.more{
+	color:#00416d;
+	cursor: pointer;
+	font-weight: 600;
+}
+.more-items{
+	display: none;
+	transition: 1s;
+}

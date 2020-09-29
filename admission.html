@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Admission - Swat paramedical</title>
+	<!-- logo in the title -->
+	<link rel="icon" href="title.png">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="libs/bootstrap.min.css">
+	<!-- fontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<!-- <link rel="stylesheet" href="libs/animate.css"> -->
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+	<!-- custom styles -->
+	<link rel="stylesheet" href="admission_style.css">
+  	<link rel="stylesheet" href="common.css">
+
+<body>
+
+	 <!-- pre loaer -->
+  <div class="loader">
+    <img src="images/loader.gif">
+    <h5 class="text-success font-weight-bold"> Site is Loading... </h5>
+  </div>
+	<!-- navBar -->
+	<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="about_us.html"><img src="title.png" class="ml-lg-5"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars menuBtn"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admission.html">Admission</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="onlineclasses.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Departments
+        </a>
+         <div class="dropdown-menu" style="background:#000a;" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="department.html">Health Technology</a>
+          <a class="dropdown-item" href="department.html">Pharmacy Technology</a>
+          <a class="dropdown-item" href="department.html">Pathalogy Technology</a>
+          <a class="dropdown-item" href="department.html">Dental Technology</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="onlineclasses.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Online Classes
+        </a>
+         <div class="dropdown-menu" style="background:#000a;" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="onlineclasses.html#HealthTechnology">Health Technology</a>
+          <a class="dropdown-item" href="onlineclasses.html#PharmacyTechnology">Pharmacy Technology</a>
+          <a class="dropdown-item" href="onlineclasses.html#PathalogyTechnology">Pathalogy Technology</a>
+          <a class="dropdown-item" href="onlineclasses.html#DentalTechnology">Dental Technology</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="verification.html"> Student Verification</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="about_us.html">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<!-- navBarEnd -->
+	<!-- -----------slider---------------- -->
+	<div class="container-fluid Slider px-0">
+		<div class="slider-inner">
+			<h2></h2>
+		</div>
+	</div>
+	<!------------ slider Text ---------------->
+	<div class="slider-text overflow-hidden">
+		<h2></h2>
+	</div>
+	<!------------ slider Text End ---------------->
+	<!-- -----------sliderEnd---------------- -->
+
+	<!-- registration form section -->
+	<div class="form-div container-fluid py-5">
+		<div class="row">
+			<div class="col-lg-4 desp pt-5 pt-lg-2">
+				<h1 class="plane"><i class="fas fa-rocket"></i></h1>
+				<p class="text-center">“A man's mind, stretched by new ideas, may never return to its original dimensions. Anyone who has never made a mistake has never tried anything new. He who opens a school door, closes a prison. Keep away from people who try to belittle your ambitions. Start where you are"</p>
+			</div>
+			<div class="col-lg-8">
+				<div class="row">
+			<div id=""></div>  <!-- in this div the result will show -->
+					<form onsubmit="submitt(event,this)">
+						<div class="col-sm-6">
+							<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-user"></i></span>
+					<input type="text" class="input" placeholder="Name" required>
+					<span class="inputLine"></span>
+					</div>
+					
+					<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-people-arrows"></i></span>
+					<input type="text" class="input" placeholder=" F. Name" required>
+					<span class="inputLine"></span>
+					</div>
+
+					<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-user-edit"></i></span>
+					<input type="text" class="input" placeholder=" Qualification" required>
+					<span class="inputLine"></span>
+					</div>
+
+					<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-user-clock"></i></span>
+					<input type="date" class="input" placeholder=" Date Of Birth" required>
+					<span class="inputLine"></span>
+					</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-home"></i></span>
+					<input type="text" class="input" placeholder=" Home Town Address" required>
+					<span class="inputLine"></span>
+					</div>
+					
+					<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-mobile"></i></span>
+					<input maxlength="13" type="tel" class="input" placeholder=" Mobile No:" required>
+					<span class="inputLine"></span>
+					</div>
+					<span class="text-danger error"></span>  
+					
+					<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-book-medical"></i></span>
+					<input list="degrees" class="input" placeholder="Choose Degree" required>
+					<span class="inputLine"></span>
+					</div>
+
+					<div class="input-div">
+					<span class="fontAwesome"><i class="fas fa-users"></i></span>
+					<input list="Gender" class="input" placeholder="Choose Gender" required>
+					<span class="inputLine"></span>
+					</div>
+
+					<div class="input-div text-center">
+					<input type="submit">
+					<input type="reset">
+					</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+			</div>
+<!-- registration form section end-->
+
+	<!-- news and admission instructions -->
+	<div class="container-fluid pt-5 newsandinst">
+		<div class="row">
+			<div class="col-md-6 inst">
+				<h5 class="text-light audioTxt">Admission Instructions</h5>
+			<ul class="text-left">
+		  <li><i class="fas fa-check-circle"></i>Candidates should take note of the fact that only online applications will be accepted.</li>
+		  <li><i class="fas fa-check-circle"></i>On visiting http://www.spmiswat.com/  (site is accessible at time of admissions only) for filling the application form, the candidates will be allotted a password to access the application form after providing their valid e-mail addresses.</li>
+		  <li><i class="fas fa-check-circle"></i>Candidates can apply for more than one discipline through single registration, however, they will be charged admission application fee for each discipline applied.</li>
+		   <li><i class="fas fa-check-circle"></i>A recent photograph of candidate is required to be uploaded.</li>
+		  <li><i class="fas fa-check-circle"></i>If both the percentage and CGPA are mentioned on Bachelors/ Masters Degree/ Transcript, then only the CGPA will be entered.</li>
+		  <li><i class="fas fa-check-circle"></i>Candidates, whose final results have not yet been announced, will enter the earned percentage/ CGPA of the last term/ semester.</li>
+		  <li><i class="fas fa-check-circle"></i>The eligibility criteria of the programme, for which applying, must be consulted before selecting the preferences.</li>
+		  <li><i class="fas fa-check-circle"></i>Candidates will not be considered for the programmes for which they are not eligible.</li>
+		  <li><i class="fas fa-check-circle"></i>Candidates can deposit the fee online, after taking the print of the challan form in any branch of HBL.</li>
+		  <li><i class="fas fa-check-circle"></i>Scanned copies of academic documents are to be attached with the online application.</li>
+		  <li><i class="fas fa-check-circle"></i>Details of the documents are as under: Matric/equivalent certificate.</li>
+			</ul>
+			</div>
+
+			<!-- news -->
+			<div class="col-md-6 news d-none d-md-inline-block">
+				 <div class="card mb-3 overflow-hidden">
+          <div class="card-header"><h5 class="text-light audioTxt">Recent News</h5></div>
+            <div class="card-body px-0">
+              <marquee behavior="" direction="up">
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, iure? <a href="#">Read more</a></li>
+              </ul>
+            </marquee>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+
+		
+
+<datalist id="degrees">
+    <option value="Health Technology">
+    <option value="Pharmacy Technology">
+    <option value="Dental Technology">
+    <option value="pathology Technology">
+</datalist>
+
+<datalist id="Gender">
+    <option value="Male">
+    <option value="Female">
+    <option value="Other">
+</datalist>
+	
+	
+	<!------------------- form End------------------>
+	<!-- contact us -->
+  <div class="container-fluid contactus py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-md-4 links">
+          <h4 class="text-light">Quick Links</h4>
+          <ul>
+            <li> <a href="index.html"> HOME </a></li>
+            <li> <a href="admission - new.html"> ADMISSIONS </a></li>
+            <li> <a href="onlineclasses.html"> ONLINE CLASSES </a></li>
+            <li> <a href="verification.html"> VERIFICATION </a></li>
+            <li> <a href="about us.html"> ABOUT US </a></li>
+          </ul>
+            <hr class="bg-light">
+        </div>
+
+        <div class="col-sm-6 col-md-4 social pt-3">
+          <h4 class="text-light">Get In Touch.</h4>
+          <br>
+          <span ><a href="#"><i class="fab fa-google text-danger"></i></a></span>
+          <span><a href="#"><i class="fa fa-envelope text-secondary"></i></a></span>
+          <span><a href="#"><i class="fab fa-twitter text-primary"></i></a></span>
+          <span><a href="#"><i class="fab fa-facebook text-info"></i></a></span>
+          <span><a href="#"><i class=" fab fa-instagram text-danger bg-light rounded"></i></a></span>
+          <span><a href="#"><i class="fab fa-whatsapp text-success"></i></a></span>
+
+          <hr class="bg-light">
+        </div>
+
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.824400792371!2d72.356471!3d34.760016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc23363e0f2b63%3A0x10c0a8ba51cd2d0c!2sMadeena%20Paramedical%20Institute%20of%20Medical%20Sciences!5e0!3m2!1sen!2s!4v1600498404347!5m2!1sen!2s" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- contact us End -->
+
+<!-- --------------footer---------- -->
+  <div class="container-fluid foot">
+    <p>All Rights Reserved Copy Right &copy; 2020. </p>
+    <p>Designed By <em> <a href="mailto:shifamkyousufzai@gmail.com"> Shifa Yousufzai Web Designer.</a></em></p>
+  </div>
+  <!-- --------------footerEnd---------- -->
+<a href="#"><div class="slidetotop"><i class="far fa-arrow-alt-circle-up"></i></div></a>
+
+
+<div class="alerts">
+    <!-- alert -->
+    <div class="alert bg-light">
+      <i class="fas fa-check-circle"></i>
+      <h5 class="pt-2">Submit Successfully.</h5>
+    </div>
+</div>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="common.js"></script>
+	<script src="admission_script.js"></script>
+</body>
+</html>

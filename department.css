@@ -1,0 +1,38 @@
+.Slider{
+        height: 70vh;
+        background: url(images/department.jpg);
+        background-size: 100% 100%;
+        background-position:center;
+        background-blend-mode: overlay;
+        background-color:#0009; 
+        transition: 5s linear background-size;
+    }
+    .slider-text{
+        position: absolute;
+        top:0px;
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider-text h2{
+       color:#fff;
+       text-align: center;
+       width: 75%;
+    }
+
+.staff figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #343434;
+    color:#fff;
+}
+    @media (max-width: 475px){
+        .slider-text h2{
+            font-size: 1.6rem;
+        }
+    }

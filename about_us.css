@@ -1,0 +1,26 @@
+.Slider{
+	height: 70vh;
+        background: url(images/aboutus.jpg);
+        background-size:100% 100%;
+        background-color: #0009;
+        background-blend-mode: overlay;
+        background-position:center;
+        transition: 5s linear background-size;
+}
+.typed{
+	color:#fff;
+	position: absolute;
+	top:25vh;
+	left: 10%;
+	right: 10%;
+	
+
+}
+hr.line{
+	border-bottom: 10px dotted purple;
+	border-top: 0px;
+	width: 270px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+}

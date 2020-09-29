@@ -1,0 +1,166 @@
+
+    /*--------------admission page-------------*/
+
+body{
+    overflow-x: hidden;
+}   .Slider{
+        height: 70vh;
+        background: url(images/slider-background.jpg);
+        background-size: 100% 100%;
+        background-position:center;
+        transition: 5s linear background-size;
+    }
+    .slider-text{
+        position: absolute;
+        top:0px;
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider-text h2{
+       color:#fff;
+       text-align: center;
+       width: 75%;
+       animation: 6s ease-in-out sliderTextAnime infinite;
+    }
+    .slider-inner{
+        height: 100% !important;
+        background:linear-gradient(#000a,#d789d755,transparent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsandinst{
+        background-image: url(images/formback.jpg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: #0007;
+        background-blend-mode: overlay;
+    }
+    .inst ul li, .news .card ul li{
+        box-shadow: 1px 1px 8px #000e, 3px 3px 20px #000e, -1px -1px 8px #000e, -3px -3px 20px #000e;
+        margin:15px 0px;
+        padding:10px;
+        list-style: none;
+        color:#fff;
+        transition: 0.3s ease-in-out;
+    }
+    .inst ul li:hover{
+        background: #ddd;
+        box-shadow: inset 1px 1px 8px #0009, inset 3px 3px 15px #0009;
+        color:#000;
+    }
+    .inst ul li i {
+        color:#cf7500;
+        background: white;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        margin-right: 10px;
+
+    }
+    .news .card{
+       background:transparent !important;
+    }
+    .form-div{
+        text-align: center;
+        background:linear-gradient(80deg,#00416d,#00416dcc,#4cf7fd);
+    }
+
+    .desp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .desp p {color: #fff}
+    .plane{
+        font-size: 4rem;
+        transform: rotate(-45deg);
+        color:#fff;
+    }
+  
+   .form-div form{
+        display: contents;
+    }
+/*=---------------media queries---------------=*/
+@media (max-width:476px){
+    .featured .card-body{
+        flex-direction: column !important;
+    }
+    .card-discription{
+        width: 100% !important;
+        margin:5px 0px !important;
+    }
+    .card-img-div{
+        width: 100% !important;
+    }
+    .slider-inner h1{
+        font-size: 1.5rem;
+    }
+    .slider-text h2{font-size: 1.3rem;}
+}
+
+@media (min-width: 768px) {
+    .featured .card-body{
+        flex-direction: column !important;
+    }
+    .card-discription{
+        width: 100% !important;
+        margin:5px 0px !important;
+    }
+    .card-img-div{
+        width: 100% !important;
+    }
+    .foot{
+        flex-direction: row;
+    }
+    .discriptionAdmission h1{
+      font-size:3rem;
+    }
+     .slider-inner h1{ font-size: 2.5rem;}
+    }
+
+
+}
+
+@media (max-width: 992px){
+  .container-fluid.cards:before{
+        background: transparent;}
+
+}
+@media (min-width: 992px) {
+      .container-fluid.cards:before{
+        background: #d9c6a5;
+    }
+    .featured .card-body{
+        flex-direction: row !important;
+    }
+    .card-discription{
+        width: 60%;
+        height: 100%;
+        margin: 0px 0px 0px 5px !important;
+    }
+    .card-img-div{
+        width: 40% !important;
+    }
+    .slider-text h2{font-size: 3rem;}
+
+}
+/*-------------admission page slider Text Animation---------------------*/
+
+                
+@keyframes sliderTextAnime {
+    0%{
+        opacity: 0;
+    }
+    25%,75%{
+       opacity:1;
+    }
+  
+    100%{
+        opacity: 0;
+    }
+}
